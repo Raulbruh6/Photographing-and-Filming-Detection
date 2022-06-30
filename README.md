@@ -2,7 +2,11 @@
 
 This repository includes scripts for the training and deployment of a photography and filming detection system. The training and NCNN conversion is done via **YOLO_notebook.ipynb** file, which can be opened in JupyterLab, Google Colab or GitLab; please don't use Github to view it, since some sections do not load properly. Due to copyright issues, the custom dataset that was created for the final model is not available in this repository and is available on request. The deployment is done on Raspberry Pi 4, which has OpenCV, NCNN, MNN, and pigpio libraries built and the scripts used on it are given in **Raspberry_Pi_scripts** folder. 
 
-It is highly advised to use the Raspberry Pi image available [here](https://drive.google.com/file/d/1YTJM-GwtlU87NoIdmZxIRFkDgh-7eCbv/view?usp=sharing). It already contains all the needed libraries and scripts for deployment and evaluation of NCNN and MNN models. It also has 16GB of available space.
+It is highly advised to use the Raspberry Pi image available [here](https://drive.google.com/file/d/1YTJM-GwtlU87NoIdmZxIRFkDgh-7eCbv/view?usp=sharing) with the following credentials:
+- Username: **pi**
+- Password: **3.14** 
+
+This image already contains all needed libraries and scripts for deployment and evaluation of NCNN and MNN models. It also has 16GB of available space.
 
 ## YOLO_notebook.ipynb
 This notebook contains 11 different sections with which you can download needed images, label them, perform data augmentation, train the model, evaluate it using image or real-time detection, and deploy it on NCNN. Most sections can be run separately, but be sure to stick with the required folder structure of **YOLO_notebook.ipynb**. To not have issues with some sections not runnning, it is advised to run through the whole notebook at least once so that all required directories are created.
